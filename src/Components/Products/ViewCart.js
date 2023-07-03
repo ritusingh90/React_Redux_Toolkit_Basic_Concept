@@ -63,7 +63,7 @@ const ViewCart = ({id}) => {
                           <h6 className='ms-4'>{cartItem.name}</h6>
                       </div>
                     </td>
-                    <td>{cartItem.price}</td>
+                    <td>${cartItem.price}</td>
                     <td>
                       <div className='d-flex justify-content-between align-items-center' style={{width:100,cursor:"pointer",color:"#111"}}>
                           <span style={{fontSize:24}} onClick={cartItem.qnty <=1 ? ()=>deleteHandle(cartItem.id) : ()=>remove(cartItem)}>-</span>
@@ -71,7 +71,7 @@ const ViewCart = ({id}) => {
                           <span style={{fontSize:24}} onClick={()=>increaseCartItem(cartItem)}>+</span>
                       </div>
                     </td>
-                    <td>{cartItem.price * cartItem.qnty}</td>
+                    <td>${cartItem.price * cartItem.qnty}</td>
                     <td><button className='item-delete' onClick={() => deleteHandle(cartItem.id)}><FaTrashAlt/></button></td>
                   </tr>
                 ))

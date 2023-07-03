@@ -45,7 +45,7 @@ const WishListItem = () => {
                             <h6 className='ms-4'>{cartItem.name}</h6>
                         </div>
                     </td>
-                    <td>{cartItem.price}</td>
+                    <td>${cartItem.price}</td>
                     <td><Button variant='dark' className='primary-btn'>Buy Now</Button></td>
                     <td><button className='item-delete' onClick={() => deleteHandle(cartItem.id)}><FaTrashAlt/></button></td>
                   </tr>
