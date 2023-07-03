@@ -1,0 +1,27 @@
+[
+    {
+        "value": "",
+        "label": "Filter Tag"
+      },
+    {
+      "value": "accessories",
+      "label": "Accessories"
+    },
+    {
+      "value": "chair",
+      "label": "Chair"
+    },
+    {
+      "value": "glass",
+      "label": "Glass"
+    },
+    {
+      "value": "deco",
+      "label": "Deco"
+    },
+    {
+      "value": "table",
+      "label": "Table"
+    }
+  ]
+  

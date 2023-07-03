@@ -1,0 +1,15 @@
+[
+    {
+      "value": "accessory",
+      "label": "Accessory"
+    },
+    {
+      "value": "decoration",
+      "label": "Decoration"
+    },
+    {
+      "value": "furniture",
+      "label": "Furniture"
+    }
+  ]
+  

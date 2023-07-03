@@ -1,0 +1,11 @@
+[
+    {
+      "value": "in stock",
+      "label": "In Stock"
+    },
+    {
+      "value": "out of stock",
+      "label": "Out of Stock"
+    }
+  ]
+  
