@@ -28,6 +28,7 @@ const BlogDetail = () => {
 
   return (
     <div>
+        
         <Container>
         {data.map((item)=>(<>
             <div className='detail row my-5' key={item.id}>

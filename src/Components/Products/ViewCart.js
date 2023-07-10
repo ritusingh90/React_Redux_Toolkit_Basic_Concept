@@ -90,7 +90,7 @@ const ViewCart = ({id}) => {
               {getData.length > 0 && (
                 <div className='btn-wrap d-flex justify-content-end '>
                     <Button variant='outline-dark' onClick={resetHandler} className="secondary-btn">
-                        Clear Wishlist
+                        Clear Cart
                     </Button>
                 </div>
                 

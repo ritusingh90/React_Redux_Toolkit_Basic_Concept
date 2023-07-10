@@ -1,7 +1,17 @@
 import React from 'react'
 import { Button } from 'react-bootstrap'
+import { useDispatch, useSelector } from 'react-redux';
 
-const OrderDetail = () => {
+const OrderDetail = () => { 
+    const getData = useSelector((state)=> state.tasks.CartData);
+    const total = useSelector((state) => state.tasks.total);
+    console.log("finding total", total)
+
+
+    console.log("Checking Fetched Data: ", getData)
+
+    const dispatch = useDispatch();
+
   return (
     <div className='order-info'>
         <div className='order-detail'>
@@ -14,21 +24,22 @@ const OrderDetail = () => {
                     </tr>
                 </thead>
                 <tbody class="border-top">
-                    <tr class="border-top">
-                        <th scope="row" class="">Table Wood Pine X1</th>
-                        <td class=" text-right">$50.00</td>
-                    </tr>
-                    <tr class="border-top">
-                        <th scope="row" class="">Nancy Chair X1</th>
-                        <td class=" text-right">$90.00</td>
-                    </tr>
+                    {
+                        getData.map((item)=> (
+                            <tr class="border-top" key={item.id}>
+                                <th scope="row" class="">{item.name}</th>
+                                <td class=" text-right">${item.price * item.qnty}</td>
+                            </tr>
+                        ))
+                    }
+                   
                     <tr class="border-top">
                         <th scope="row" class=" font-bold whitespace-nowra">Subtotal</th>
-                        <td class=" text-right">$140.00</td>
+                        <td class=" text-right">${total}</td>
                     </tr>
                     <tr class="border-top">
                         <th scope="row" class="">Total</th>
-                        <td class=" text-right">$140.00</td>
+                        <td class=" text-right">${total}</td>
                     </tr>
                 </tbody>
             </table>
