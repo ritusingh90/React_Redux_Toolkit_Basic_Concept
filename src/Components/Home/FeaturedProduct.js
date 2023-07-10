@@ -1,7 +1,5 @@
 import React, {useState} from 'react'
-import { Button, Container } from 'react-bootstrap'
-import { useDispatch } from 'react-redux'
-import { addProduct } from '../../Features/productSlice'
+import { Container } from 'react-bootstrap'
 import { FeatureData } from '../../Data/ProductData'
 import { NavLink } from 'react-router-dom'
 
@@ -12,11 +10,6 @@ const FeaturedProduct = () => {
 
 
     console.log("Feature Data:", feature)
-    const dispatch = useDispatch();
-
-    const addProductHandle = (e)=> {
-        dispatch(addProduct(e))
-    }
 
   return (
     <div className='fp-wrap '>

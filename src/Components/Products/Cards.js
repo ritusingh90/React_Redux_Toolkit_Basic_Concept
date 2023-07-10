@@ -52,12 +52,14 @@ const Cards = () => {
         }
 
         //Dropdown Filter
-        return productItems.filter((movie) => {
-            const movieGenre = movie.category.map((val) => val.toLowerCase());
-            return movieGenre.includes(tagList)
+        return productItems.filter((helendoProduct) => {
+            const helendoProductGenre = helendoProduct.category.map((val) => val.toLowerCase());
+            console.log("Helendo", helendoProductGenre);
+            return helendoProductGenre.includes(tagList)
           });
        
     }, [tagList, searchTerm ]);
+    
 
     const onfilterHandle = (product) => {
         console.log("get Filter Price", product.target.value)

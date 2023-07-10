@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Container } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const DecoCollection = () => {
   return (
@@ -10,7 +11,9 @@ const DecoCollection = () => {
                     <h3 className='sec-title'>Deco Collection <span className='text-danger'>50% OFF</span></h3>
                     <p>The standard chunk of Lorem Ipsum used since the 1500s is reproduced for those. Sections 1.10.32 and 1.10.33 from “de Finibus Bonorum et Malorum</p>
                     <p>ghhg</p>
-                    <div className='btn-wrap'><Button variant='dark' className='primary-btn'>Shop Now &#x2192;</Button></div>
+                    <div className='btn-wrap'>
+                      <Link to="/cart" className="primary-btn btn-dark btn">Shop Now  &#x2192;</Link>
+                    </div>
                 </div>
                 <div className='col-4'>
                 </div>

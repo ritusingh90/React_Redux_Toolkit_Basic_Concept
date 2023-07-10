@@ -12,6 +12,7 @@ import NewsLetter from './Components/Common/NewsLetter';
 import ContactDetail from './Components/Common/ContactDetail';
 import Footer from './Components/Common/Footer';
 import Checkout from './Components/Products/Checkout';
+import BlogDetail from './Pages/BlogDetail';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/viewcart" element={<ViewCart/>}/>
         <Route path="/wishlist" element={<WishListItem/>}/>
         <Route path="/checkout" element={<Checkout/>}/>
+        <Route path="/blog/:id" element={<BlogDetail/>}/>
      </Routes>
      <NewsLetter/>
       <ContactDetail/>

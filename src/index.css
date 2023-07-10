@@ -3,6 +3,8 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -16,14 +18,15 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+	/* margin: 0;
 	padding: 0;
-	border: 0;
+	border: 0; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
   --tw-text-opacity: 1;
   color: rgb(17 17 17/var(--tw-text-opacity));
+  font-family: 'Roboto', sans-serif;
 
 }
 /* HTML5 display-role reset for older browsers */
@@ -128,6 +131,12 @@ header.header nav .bedge-wrap span{
   left:0;
   bottom:0;
 
+}
+
+.banner-col-tag {
+  line-height: 35px;
+  margin-bottom: 23px;
+  display: block;
 }
 
 .fp-wrap .title-tag {
@@ -355,4 +364,123 @@ header.header nav .bedge-wrap span{
     --tw-bg-opacity: 1;
     background-color: rgb(244 245 247/var(--tw-bg-opacity));
     margin-bottom: 80px;
+}
+
+.read-more-blog {
+  background: white;
+  bottom:0;
+  right:-120px;
+  padding: 8px 14px;
+  transition: all .5s ease-in;
+}
+
+.read-more-blog a {
+  text-decoration: none;
+  line-height: 1.4;
+  color: #363636;
+}
+
+.blog-main-wrap:hover .read-more-blog {
+  right:0;
+}
+
+.blog-main-wrap h5 {
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.blog-main-wrap h5:before {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  margin: 15px 0;
+  background-color: rgb(202 202 202/1);
+  bottom: -15px;
+  left: 0;
+}
+
+.blog-main-wrap h5:after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: rgb(220 177 74/1);
+  margin: 15px 0;
+  bottom: -15px;
+  left: 0;
+  width: 0;
+  transition: all 0.5s ease-in;
+}
+
+.blog-main-wrap:hover h5:after {
+  width: 70px
+}
+
+.billing-detail-wrap .form-control {
+  padding:10px 20px;
+  border-color: rgb(232 232 232/1);
+  height: 50px;
+  border-radius: 0;
+}
+
+.order-info .order-detail {
+  padding: 40px 45px 50px;
+  background-color: rgb(246 246 246/1);
+  border: 1px solid rgb(191 191 191/1);
+}
+
+.order-info .order-detail h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.order-info .order-detail table {
+  font-size: .875rem;
+  line-height: 1.25rem;
+  text-align: left;
+}
+
+.order-info .order-detail table thead {
+  font-size: 18px;
+  background-color: rgb(244 245 247/1);
+}
+
+.order-info .order-detail table thead th {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.order-info .order-detail table thead th:last-child {
+  text-align: right;
+}
+
+.order-info .order-detail table tbody {
+  border-top: 1px solid rgb(205 205 205/1);
+}
+
+.order-info .order-detail table tbody tr {
+  border-color: rgb(205 205 205/1);
+}
+
+.order-info .order-detail table tbody tr th {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.order-info .order-detail table tbody tr td {
+  text-align: right;
+  padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.order-info .detail-info {
+  padding-top: 35px;
+}
+
+.order-info .payment-btn-wrap {
+  padding-top: 35px;
 }

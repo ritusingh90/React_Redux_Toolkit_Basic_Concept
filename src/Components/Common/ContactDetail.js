@@ -3,7 +3,7 @@ import { Container } from 'react-bootstrap'
 
 const ContactDetail = () => {
   return (
-    <div className='contactDetail-wrap'>
+    <div className='contactDetail-wrap border-top pt-4'>
         <Container>
             <div className='row'>
                 <div className='col-3'>

@@ -16,11 +16,7 @@ const BestSelling = () => {
     console.log("Feature Data:", feature)
     const dispatch = useDispatch();
 
-    // const addProductHandle = (e)=> {
-    //     dispatch(addProduct(e))
-    // }
-
-
+ 
 
     const {id} = useParams(); 
     console.log("Params :", id);
